@@ -1,0 +1,185 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #DD4814;
+}
+
+/*
+ * Base structure
+ */
+
+html {
+  position: relative;
+  height: 100%;
+}
+body {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+
+
+/* Center container */
+
+.inner {
+  padding: 30px;
+}
+
+.container-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.container-center.responsive {
+  width: 80%; 
+  height: 50%;
+  min-width: 400px;
+  max-width: 600px;
+  padding: 40px;
+}
+
+.container-center.projects {
+      height: 90%;
+      width: 80%;
+      min-width: 400px;
+      max-width: 1000px;
+}
+
+/* Social icons */
+.social {
+    margin: 6px;
+}
+
+.social i {
+    transition: all .2s ease-in-out;
+}
+
+.social i:hover {
+    transform: scale(1.1);
+}
+
+.social i:before {
+    font-size: 50px;
+}
+
+.social.google-plus {
+    color:  #dc4e41;
+}
+
+.social.github {
+    color:  #4183c4;
+}
+
+.social.twitter {
+    color:  #55acee;
+}
+
+.social.mail {
+    color: gray;
+}
+
+/* Navbar */
+.navbar-brand.desktop { display: none; }
+
+@media (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+        background: transparent;
+        border-width: 0px;
+    }
+            
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    
+    .navbar-default .navbar-nav > li > a {
+          height: 45px;
+          margin-right: 12px;
+          margin-left: 12px;
+          border-bottom: 3px solid transparent;
+          padding-left: 0px;
+          padding-right: 0px;
+    }
+    
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover {
+         background: transparent;
+         border-color:  #DD4814;
+    }
+    .navbar-default .navbar-nav > .active > a:focus {
+         background: transparent;
+         border-color:  #DD4814;
+    }
+    
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+          background-color: transparent;
+          border-color: #B6B6B6;
+    }
+                
+    .navbar-brand.mobile { display: none; }
+    .navbar-brand.desktop { 
+        display: inline-block;
+        margin-right: 100px;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Responsiveness */
+@media (max-width: 480px), (max-height: 600px) {
+    .container-center.responsive {
+        min-width: 200px;
+        width: 100%; 
+        height: 70%;
+        padding: 16px;
+    }
+    .social {
+        margin: 3px;
+    }
+
+    .social i:before {
+        font-size: 30px;
+    }
+}
+
+.project-image {
+    display:block;
+    height:200px;
+    line-height:200px;
+    overflow:hidden;
+}
+
+.project-badge {
+    display: none;
+    font-size: 12px;
+    position: absolute; 
+    top: 10px; 
+    right: 25px;
+    font-weight: normal;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
