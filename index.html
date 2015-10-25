@@ -57,9 +57,12 @@
           <div class="row">
             <div class="container-center responsive">
                 <h1>Hey there,</h1>
-                <p class="lead">
-                    I'm Tim Süberkrüb. One of my leading hobbies is coding. I'm passionate about open-source software, Ubuntu and everything related to technology. 
-                    Last but not least I'm only human, nothing more and nothing less :) <span class="cursor">|</span> 
+                <p  class="lead">
+                	<span id= "lead-text"><!--
+	                 -->I'm Tim Süberkrüb. Coding is one of my leading hobbies. I'm passionate about open-source software, Ubuntu and everything related to technology. <!-- 
+	                 -->Last but not least I'm only human, nothing more and nothing less :)<!--
+                	--></span>
+                	<span id="lead-cursor" class="cursor">|</span>
                 </p>
                         
                 <a href="https://plus.google.com/+TimSüberkrübDE/" class="social google-plus">
@@ -90,11 +93,18 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
         
+    <script src="js/typing.js"></script>
         
     <script type="text/javascript">
         $(document).ready(function() {
             // cool, your spam bot is capable of JavaScript :)
             $(".mail").attr("href", "mailto:tim"+"."+"sueberkrueb" + "@" + "web.de");
+        	
+        	// Type welcome text
+        	var p = $("#lead-text");
+        	var text = p.text();
+        	p.text("");
+        	typeText(p, text);
         });
     </script>
         
