@@ -168,7 +168,6 @@ body {
 }
 
 .project-badge {
-    display: none;
     font-size: 12px;
     position: absolute; 
     top: 10px; 
