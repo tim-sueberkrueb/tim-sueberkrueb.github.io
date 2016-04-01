@@ -1,0 +1,12 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-metadata
+
+# Ruby
+Gemfile.lock
+.ruby-version
+.ruby-gemset
+
+# Aptana Project Files
+.project

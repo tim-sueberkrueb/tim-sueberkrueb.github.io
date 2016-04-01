@@ -1,112 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Tim Süberkrüb">
-    
-    <!-- Checkout my code: https://github.com/tim-sueberkrueb -->
+---
+layout: default
+title: Home
+---
 
-    <title>Tim Süberkrüb</title>
+<div class="container">
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <div class="row">
+      <div class="container-center responsive">
+          <h1>Hey there,</h1>
+          <p  class="lead">
+          	<span id= "lead-text"><!--
+             -->I'm Tim Süberkrüb. Coding is one of my leading hobbies. I'm passionate about open-source software, Ubuntu and everything related to technology. <!--
+             -->Last but not least I'm only human, nothing more and nothing less :)<!--
+          	--></span>
+          	<span id="lead-cursor" class="cursor">|</span>
+          </p>
 
-    <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
+          <a href="https://plus.google.com/+TimSüberkrübDE/" class="social google-plus">
+              <i class="fa fa-google-plus-square"></i>
+          </a>
+          <a href="https://github.com/tim-sueberkrueb/" class="social github">
+              <i class="fa fa-github-square"></i>
+          </a>
+          <a href="mailto:" class="social mail">
+              <i class="fa fa-envelope-square"></i>
+          </a>
+          <a href="https://twitter.com/TimSueberkrueb" class="social twitter">
+              <i class="fa fa-twitter-square"></i>
+          </a>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      </div>
+  </div> <!-- row -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+</div> <!-- container -->
 
-  <body>
-      
-      <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand mobile" href="index.html">Tim Süberkrüb</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <a class="navbar-brand desktop" href="index.html">Tim Süberkrüb</a>
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-      
-      <div class="container">
-            
-          <div class="row">
-            <div class="container-center responsive">
-                <h1>Hey there,</h1>
-                <p  class="lead">
-                	<span id= "lead-text"><!--
-	                 -->I'm Tim Süberkrüb. Coding is one of my leading hobbies. I'm passionate about open-source software, Ubuntu and everything related to technology. <!-- 
-	                 -->Last but not least I'm only human, nothing more and nothing less :)<!--
-                	--></span>
-                	<span id="lead-cursor" class="cursor">|</span>
-                </p>
-                        
-                <a href="https://plus.google.com/+TimSüberkrübDE/" class="social google-plus">
-                    <i class="fa fa-google-plus-square"></i>
-                </a>
-                <a href="https://github.com/tim-sueberkrueb/" class="social github">
-                    <i class="fa fa-github-square"></i>
-                </a>
-                <a href="mailto:" class="social mail">
-                    <i class="fa fa-envelope-square"></i>
-                </a>
-                <a href="https://twitter.com/TimSueberkrueb" class="social twitter">
-                    <i class="fa fa-twitter-square"></i>
-                </a>
-            
-            </div>
-        </div> <!-- row -->
-        
-     </div> <!-- container -->
-        
-    <!-- container -->
+<script src="js/typing.js"></script>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-        
-    <script src="js/typing.js"></script>
-        
-    <script type="text/javascript">
-        $(document).ready(function() {
-            // cool, your spam bot is capable of JavaScript :)
-            $(".mail").attr("href", "mailto:tim"+"."+"sueberkrueb" + "@" + "web.de");
-        	
-        	// Type welcome text
-        	var p = $("#lead-text");
-        	var text = p.text();
-        	p.text("");
-        	typeText(p, text);
-        });
-    </script>
-        
-  </body>
-</html>
+<script type="text/javascript">
+  $(document).ready(function() {
+      // cool, your spam bot is capable of JavaScript :)
+      $(".mail").attr("href", "mailto:tim"+"."+"sueberkrueb" + "@" + "web.de");
+
+  	// Type welcome text
+  	var p = $("#lead-text");
+  	var text = p.text();
+  	p.text("");
+  	typeText(p, text);
+  });
+</script>
