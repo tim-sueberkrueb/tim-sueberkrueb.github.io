@@ -10,7 +10,7 @@ Wow, that went fast! It was exactly one year ago when I created my GitHub accoun
 At the very beginning of last year, I stumbled across the [Papyros Project][papyros-io], an effort to create an Material Design Linux OS on top of Arch Linux using modern technologies like Qt 5 and Wayland. Well, I fell in love with it :) Inspired by concepts of the associated [Papyros Google+ community][papyros-gpluscommunity], I started experimenting and created a fairly simple webbrowser application, written in pure QML.
 Looking back from today, it was actually looking really crappy and didn't follow Material Design at all! Despite that fact, luckily, the community was very welcoming and motivating when I posted it. So I continued hacking on it.
 
-[Pierre][pierre-com], who had created his own browser concept on the very beginning of 2015, joined development and together everything went a lot faster (and made a lot more fun!).
+[Pierre][pierre-com], who had created his own browser concept at the very beginning of 2015, joined development and together everything went a lot faster (and made a lot more fun!).
 We decided to rename the browser, formerly simply called "Material Browser", to "Liri Browser" which was a great suggestion from [Christoph Laier][christoph-laier-gplus]. "Liri" is the Albanian word for freedom and we found it was quite fitting and sounded nice.
 
 Over time the project evolved and what started as a very simple experiment became a quite usable alpha-state browser.
