@@ -78,7 +78,8 @@ a:hover {
 
 .project-image {
   display: block;
-  height: 200px;
+  max-height: 200px;
+  max-width: 90%;
   line-height: 200px;
   overflow: hidden;
   margin: 16px;
