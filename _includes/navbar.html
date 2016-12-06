@@ -1,7 +1,9 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -12,10 +14,18 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <a class="navbar-brand desktop" href="/">Tim Süberkrüb</a>
-        <li {% if page.title == "Home" %}class="active"{% endif %}><a href="/">Home</a></li>
-        <li {% if page.title == "Projects" %}class="active"{% endif %}><a href="/projects">Projects</a></li>
-        <li {% if page.title == "Articles" %}class="active"{% endif %}><a href="/articles">Articles</a></li>
-        <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="/contact">Contact</a></li>
+        <li {% if page.permalink == "/" %}class="active"{% endif %}>
+          <a href="/">Home</a>
+        </li>
+        <li {% if page.permalink == "/projects/" %}class="active"{% endif %}>
+          <a href="/projects/">Projects</a>
+        </li>
+        <li {% if page.permalink == "/articles/" %}class="active"{% endif %}>
+          <a href="/articles/">Articles</a>
+        </li>
+        <li {% if page.permalink == "/contact/" %}class="active"{% endif %}>
+          <a href="/contact/">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
